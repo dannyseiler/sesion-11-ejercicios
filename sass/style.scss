@@ -1,0 +1,31 @@
+@import "../libs/bootstrap/scss/bootstrap";
+
+.image-content-1,.image-content-2,.image-content-3 {
+  width: 300px;
+  margin: 20px;
+}
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+.image-content-1 {
+  display: block;
+
+  @include media-breakpoint-up(xl){
+    display:none;
+  }
+}
+
+.image-content-2 {
+  display: block;
+
+  @include media-breakpoint-up(lg){
+    display:none;
+  }
+}
